@@ -8,7 +8,7 @@
                       <!--Logo-->
                       <div class="logo-box">
                           <div class="logo">
-                              <a href="{{ '/' }}"><img src="assets/images/logo.png" alt="" /></a>
+                              <a href="{{ url('/') }}"><img src="assets/images/logo.png" alt="" /></a>
                           </div>
                       </div>
                   </div>
