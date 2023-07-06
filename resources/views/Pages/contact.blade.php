@@ -67,7 +67,15 @@
           </div>
           <!-- Contact Form-->
           <div class="contact-form">
-            <form method="post" action="#">
+            <form action="{{url('contact')}}" method="post">
+              @if (session()->has('msg-success'))
+                <div class="alert alert-success" role="alert">
+                   
+                    {{ session('msg-success') }}
+                </div>
+                @endif
+            
+              @csrf
               <div class="row clearfix">
                 <div class="col-md-6 form-group">
                   <label for="name">Enter your name</label>
@@ -95,10 +103,10 @@
                 <div class="col-md-6 form-group">
                   <label for="email">Enter your Phone</label>
                   <input
-                    type="email"
-                    name="email"
+                    type="text"
+                    name="phone"
                     id="email"
-                    placeholder="Enter email Phone......"
+                    placeholder="Enter phone number here......"
                     required=""
                   />
                   <i class="fas fa-phone"></i>

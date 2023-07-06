@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,5 @@ Route::get('/contact', function () {
 Route::get('/Equipment-Machinery', function () {
     return view('Pages.Equipment-Machinery');
 });
+
+Route::post('/contact', [MailController::class, 'sendMail'])->name('sendMail');

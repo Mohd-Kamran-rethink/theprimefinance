@@ -24,7 +24,7 @@
                 href="{{url('mortgage-finance')}}"
                 class="theme-btn btn-style-one"
                 ><span class="btn-title">-- Our Services --</span></a
-              ><a href="contact.html" class="theme-btn btn-style-two"
+              ><a href="" class="theme-btn btn-style-two"
                 ><span class="btn-title">-- Contact Us --</span></a
               >
             </div>
@@ -52,7 +52,7 @@
                 href="{{url('mortgage-finance')}}"
                 class="theme-btn btn-style-one"
                 ><span class="btn-title">-- Our Services --</span></a
-              ><a href="contact.html" class="theme-btn btn-style-two"
+              ><a href="" class="theme-btn btn-style-two"
                 ><span class="btn-title">-- Contact Us --</span></a
               >
             </div>
@@ -79,7 +79,7 @@
                 href="{{url('mortgage-finance')}}"
                 class="theme-btn btn-style-one"
                 ><span class="btn-title">-- Our Services --</span></a
-              ><a href="contact.html" class="theme-btn btn-style-two"
+              ><a href="" class="theme-btn btn-style-two"
                 ><span class="btn-title">-- Contact Us --</span></a
               >
             </div>
@@ -106,7 +106,7 @@
                 href="{{url('mortgage-finance')}}"
                 class="theme-btn btn-style-one"
                 ><span class="btn-title">-- Our Services --</span></a
-              ><a href="contact.html" class="theme-btn btn-style-two"
+              ><a href="" class="theme-btn btn-style-two"
                 ><span class="btn-title">-- Contact Us --</span></a
               >
             </div>
