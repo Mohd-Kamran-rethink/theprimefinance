@@ -78,24 +78,12 @@
             <div class="col-lg-6">
               <div class="content-box">
                 <div class="sec-title">
-                  <div class="sub-title">About Us</div>
-                  <h2>We Work With <br />You To Address</h2>
+                  <div class="sub-title">@lang('lang.aboutUsHeading')</div>
+                  <h2>@lang('lang.WeWorkWith')<br />@lang('lang.YouToAddress')</h2>
                   <div class="text">
-                    Prime Finance Consultant assists you in all aspects of
-                    arranging Trade Facility & Finance from local &
-                    International financial institutions and banks. Our ultimate
-                    objective is the client's complete fulfilment.<br /><br />
-                    Prime Financial consultant is an expert who work together to
-                    serve clients on a broad range of advisory services
-                    including Trade Finance, Mortgage – residential &
-                    Commercial, Project Finance, Construction Finance, Business
-                    Loan from local and international bank and Financial
-                    Institute.<br /><br />
-                    We provide professional financial advice to both Businesses
-                    and individual. With over A Decade of experience we’ll
-                    ensure not only that you get a better arrangement but
-                    maximum exposure and you’re always getting the best guidance
-                    from professional company in the industry.
+                    @lang('lang.footerContent')<br /><br />
+                    @lang('lang.AboutUsP2')<br /><br />
+                    @lang('lang.AboutUsP3')
                   </div>
                 </div>
               </div>

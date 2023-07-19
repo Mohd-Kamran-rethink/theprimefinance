@@ -37,4 +37,8 @@ return [
     'Bringingyouthe' => 'Bringing you the right team with the right advice, backed by',
     'decadesof' => 'decades of experience. Get in touch here asap.',
     'footerContent' => "The Prime Finance Consultant assists you in all aspects of arranging Trade Facility & Finance from local & International financial institutions and banks. Our ultimate objective is the client's complete fulfilment.",
+    'WeWorkWith' => 'We Work With ',
+    'YouToAddress' => 'You To Address',
+    'AboutUsP2' => 'Prime Financial consultant is an expert who work together to serve clients on a broad range of advisory services including Trade Finance, Mortgage – residential & Commercial, Project Finance, Construction Finance, Business Loan from local and international bank and Financial Institute.',
+    'AboutUsP3' => 'We provide professional financial advice to both Businesses and individual. With over A Decade of experience we’ll ensure not only that you get a better arrangement but maximum exposure and you’re always getting the best guidance from professional company in the industry.',
 ];
