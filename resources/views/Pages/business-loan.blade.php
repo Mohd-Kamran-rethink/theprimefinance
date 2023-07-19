@@ -168,21 +168,21 @@
                         <div class="image-box"><img src="assets/images/resource/service-4.jpg" alt=""></div>
                         <div class="content">
                             <div class="sec-title">
-                                <div class="sub-title">Financial Planning</div>
-                                <h2>Business Loan</h2>
+                                <div class="sub-title">@lang('lang.FinancialPlanning')</div>
+                                <h2>@lang('lang.businessLoan')</h2>
                             </div>
-                            <div class="text"> Prime Finance arranges the business Loan from the various banks and the
-                                financial institute to grow the business and for the working capital.<br>
-                                With the help of more than 10 years of experience we can understand the client’s
-                                requirement, so we arrange the Term Loan up to 5 year for expansion of business, purchase
-                                goods and working capital with the best rate.<br>
-                                We at PFC arrange the Finance for the various products as below<br><br>
+                            <div class="text"> 
+                              @lang('lang.businessLoanContent')<br>
+                              @lang('lang.Withthehelpofmorethan')<br>
+                              <br>
+                              @lang('lang.WeatPFCarrange')<br>
+                               <br>
 
-                                <strong>A) Unsecured Loan</strong><br>
-                                <strong>B) POS Loan (Point of Sale)</strong> <br>
+                                <strong>A) @lang('lang.UnsecuredLoan')</strong><br>
+                                <strong>B) @lang('lang.POSLoan')</strong> <br>
 
-                                <strong>C) Medical Equipment Finance</strong> <br>
-                                <strong>D) Warehouse Finance</strong><br>
+                                <strong>C) @lang('lang.MedicalEquipmentFinance')</strong> <br>
+                                <strong>D) @lang('lang.WarehouseFinance')</strong><br>
 
 
                             </div>

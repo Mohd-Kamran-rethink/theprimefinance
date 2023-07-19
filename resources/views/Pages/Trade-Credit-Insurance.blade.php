@@ -50,144 +50,109 @@
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-4">
-                  <aside class="sidebar">
-                    <!-- Category Widget -->
-                    <div class="sidebar-widget-two categories-widget-two">
-                      <div class="widget-content">
-                        <ul>
-                          <li >
-                            <a href="{{url('trade-finance')}}"
-                              >@lang('lang.tradeFinance')<i class="fa fa-angle-right"></i
-                            ></a>
-                          </li>
-                          <li >
-                            <a href="{{url('mortgage-finance')}}"
-                              >@lang('lang.mortageFinance')<i class="fa fa-angle-right"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="{{url('business-loan')}}"
-                              >@lang('lang.businessLoan')<i class="fa fa-angle-right"></i
-                            ></a>
-                          </li>
-                          <li >
-                            <a href="{{url('Equipment-Machinery')}}"
-                              >@lang('lang.EquipmentMachinery')<i
-                                class="fa fa-angle-right"
-                              ></i
-                            ></a>
-                          </li>
-                          <li class="current">
-                            <a href="{{url('Trade-Credit-Insurance')}}"
-                              >@lang('lang.TradeCreditInsurance')</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- Contact Form Widget -->
-                    <div class="sidebar-widget-two contact-form-widget">
-                      <div class="inner-box">
-                        <h3>@lang('lang.ContactUs')</h3>
-                        <!-- Contact Form-->
-                        <div class="contact-form">
-                          <form method="post" action="#" id="contact-form">
-                            <div class="row clearfix">
-                              <div class="col-md-12 form-group">
-                                <input
-                                  type="text"
-                                  name="username"
-                                  placeholder="@lang('lang.Enteryourname')..."
-                                  required=""
-                                />
-                                <i class="fal fa-user"></i>
-                              </div>
-    
-                              <div class="col-md-12 form-group">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  placeholder="@lang('lang.Enteryouremail')..."
-                                  required=""
-                                />
-                                <i class="fal fa-envelope"></i>
-                              </div>
-    
-                              <div class="col-md-12 form-group">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  placeholder="@lang('lang.EnteryourPhone')..."
-                                  required=""
-                                />
-                                <i class="fal fa-phone"></i>
-                              </div>
-    
-                              <div class="col-md-12 form-group text-center">
-                                <button
-                                  class="theme-btn btn-style-one"
-                                  type="submit"
-                                  name="submit-form"
-                                >
-                                  <span class="btn-title">@lang('lang.SubmitNow')</span>
-                                </button>
-                              </div>
+                    <aside class="sidebar">
+                        <!-- Category Widget -->
+                        <div class="sidebar-widget-two categories-widget-two">
+                            <div class="widget-content">
+                                <ul>
+                                    <li>
+                                        <a href="{{ url('trade-finance') }}">@lang('lang.tradeFinance')<i
+                                                class="fa fa-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('mortgage-finance') }}">@lang('lang.mortageFinance')<i
+                                                class="fa fa-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('business-loan') }}">@lang('lang.businessLoan')<i
+                                                class="fa fa-angle-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('Equipment-Machinery') }}">@lang('lang.EquipmentMachinery')<i
+                                                class="fa fa-angle-right"></i></a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="{{ url('Trade-Credit-Insurance') }}">@lang('lang.TradeCreditInsurance')</a>
+                                    </li>
+                                </ul>
                             </div>
-                          </form>
                         </div>
-                      </div>
-                    </div>
-                    <!-- Contact Info Widget -->
-                    <div class="sidebar-widget-two contact-info-widget">
-                      <div
-                        class="inner-box"
-                        style="
+                        <!-- Contact Form Widget -->
+                        <div class="sidebar-widget-two contact-form-widget">
+                            <div class="inner-box">
+                                <h3>@lang('lang.ContactUs')</h3>
+                                <!-- Contact Form-->
+                                <div class="contact-form">
+                                    <form method="post" action="#" id="contact-form">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 form-group">
+                                                <input type="text" name="username" placeholder="@lang('lang.Enteryourname')..."
+                                                    required="" />
+                                                <i class="fal fa-user"></i>
+                                            </div>
+
+                                            <div class="col-md-12 form-group">
+                                                <input type="email" name="email" placeholder="@lang('lang.Enteryouremail')..."
+                                                    required="" />
+                                                <i class="fal fa-envelope"></i>
+                                            </div>
+
+                                            <div class="col-md-12 form-group">
+                                                <input type="email" name="email" placeholder="@lang('lang.EnteryourPhone')..."
+                                                    required="" />
+                                                <i class="fal fa-phone"></i>
+                                            </div>
+
+                                            <div class="col-md-12 form-group text-center">
+                                                <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                                                    <span class="btn-title">@lang('lang.SubmitNow')</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact Info Widget -->
+                        <div class="sidebar-widget-two contact-info-widget">
+                            <div class="inner-box"
+                                style="
                           background-image: url(assets/images/background/image-18.jpg);
-                        "
-                      >
-                        <h3>@lang('lang.Needhelp')?</h3>
-                        <ul>
-                          <li>
-                            <a href="mailto:info@webmail.com"
-                              >info@theprimefinance.com</a
-                            >
-                          </li>
-                          <li><a href="tel:+98787676576">+971 589 776 626</a></li>
-                          <li>
-                            <a href="mailto:support.example.com"
-                              >www.theprimefinance.com</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </aside>
+                        ">
+                                <h3>@lang('lang.Needhelp')?</h3>
+                                <ul>
+                                    <li>
+                                        <a href="mailto:info@webmail.com">info@theprimefinance.com</a>
+                                    </li>
+                                    <li><a href="tel:+98787676576">+971 589 776 626</a></li>
+                                    <li>
+                                        <a href="mailto:support.example.com">www.theprimefinance.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
                 <div class="col-lg-8">
                     <div class="services-details pl-lg-5">
                         <div class="image-box"><img src="assets/images/resource/service-2.jpg" alt=""></div>
                         <div class="content">
                             <div class="sec-title">
-                                <div class="sub-title">Financial Planning</div>
-                                <h2>What is trade credit insurance?</h2>
+                                <div class="sub-title"></div>
+                                <h2>@lang('lang.WhatIsTradeCreditInsurance')</h2>
                             </div>
                             <div class="text">
                                 <div>
-                                    Trade credit insurance <b>covers your receivables due within 12 months against
-                                        unexpected risks</b> (changes to import and export policy, political risk, client
-                                    insolvency etc.) so that your cash flow is protected and you avoid bad liability.
+                                    @lang('lang.TradeCreditInsurance') <b>@lang('lang.coversyourreceivables')</b>
+                                    @lang('lang.changestoimportandexportpolicy')
+
                                 </div>
                                 <div>
-                                    Trade Credit Insurances Company observes the financial strength of your clients and
-                                    keeps you up to date.
+                                    @lang('lang.TradeCreditInsurance')
+                                    @lang('lang.Companyobservesthefinancialstrength')
                                 </div>
                                 <div>
-                                    If your clients become insolvent or fall into protracted default, you are indemnified
-                                    for the value of goods or services you have delivered.
-                                </div>
-                                <div>
-                                    We help our clients to get Trade Credit Insurance from well-known Insurance Companies
-                                    around the globe.
+                                    @lang('lang.Wehelpourclientstoget')
                                 </div>
                             </div>
 

@@ -168,24 +168,22 @@
                         <div class="image-box"><img src="assets/images/resource/service-3.jpg" alt=""></div>
                         <div class="content">
                             <div class="sec-title">
-                                <div class="sub-title">Financial Planning</div>
-                                <h2>Mortgage Finance</h2>
+                                <div class="sub-title">@lang('lang.FinancialPlanning')</div>
+                                <h2>@lang('lang.mortageFinance')</h2>
                             </div>
-                            <div class="text"> With over 10 years’ experience, Prime Finance works with a bank and
-                                financial institutions to bring you the best option with the rate.<br>
-                                We at Prime Finance compare the Mortgage parameters which include Rate, application fees,
-                                Insurance etc. with the entire bank and the finance institute so we can serve the best
-                                product to our client.<br>
-                                With our knowledge from the entire market, we offer a wide range of products and services in
-                                Mortgage Sector.These include the following <br><br>
+                            <div class="text"> 
+                              @lang('lang.mortageFinanceContent')<br>
+                              @lang('lang.mortageFinanceContent2')<br>
+                              @lang('lang.Withourknowledgefromthe')<br>
+                                <br>
 
-                                <strong>1) New Purchase</strong><br>
-                                <strong>2) Equity Release</strong> <br>
-                                <strong>3) Buyout</strong><br>
-                                <strong>4) Loan against Rental Income</strong> <br>
-                                <strong>5) Warehouse Finance</strong><br>
-                                <strong>6) Labour Camp Finance</strong> <br>
-                                <strong>7) Real Estate Project Finance</strong><br>
+                                <strong>1) @lang('lang.NewPurchase')</strong><br>
+                                <strong>2) @lang('lang.EquityRelease')</strong> <br>
+                                <strong>3) @lang('lang.Buyout')</strong><br>
+                                <strong>4) @lang('lang.LoanagainstRentalIncome')</strong> <br>
+                                <strong>5) @lang('lang.WarehouseFinance')</strong><br>
+                                <strong>6) @lang('lang.LabourCampFinance')</strong> <br>
+                                <strong>7) @lang('lang.RealEstateProjectFinance')</strong><br>
 
                             </div>
                             <div class="graph">

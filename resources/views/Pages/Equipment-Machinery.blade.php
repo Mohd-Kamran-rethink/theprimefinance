@@ -168,17 +168,10 @@
                         <div class="image-box"><img src="assets/images/resource/service-5.jpg" alt=""></div>
                         <div class="content">
                             <div class="sec-title">
-                                <div class="sub-title">Financial Planning</div>
-                                <h2>Equipment &amp; Machinery Finance</h2>
+                                <div class="sub-title">@lang('lang.FinancialPlanning')</div>
+                                <h2>@lang('lang.EquipmentMachinery')</h2>
                             </div>
-                            <div class="text"> When business starts and gradually grows, Business need some update to
-                                stick in the market and to generate the more profit it requires to invest in equipment,
-                                machinery, and other commercial wealth. TPF offers solutions that meet the demand or
-                                requirements of purchasing profitable assets or equipments.
-                                The set of products offered includes various types of equipments such as Medical Equipments,
-                                Construction Equipments, and Professional Equipments. These offers are structured in such a
-                                way that it contributes clients with an option to use their assets as security to fund the
-                                purchase.<br>
+                            <div class="text">@lang('lang.Whenbusinessstarts') <br>
 
                             </div>
                             <div class="graph">
