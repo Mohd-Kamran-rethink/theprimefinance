@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Designed by Zapio -->
-
+<script type="text/javascript">
+    BASE_URL = "<?php echo url(''); ?>";
+</script>
 <head>
     <meta charset="utf-8" />
     <title>Prime Finance Consultant</title>

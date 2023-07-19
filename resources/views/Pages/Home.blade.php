@@ -1,6 +1,6 @@
 @extends('index')
 @section('content')
-@include('Common.banner')
+    @include('Common.banner')
     <!--Search Popup-->
     <div id="search-popup" class="search-popup">
         <div class="close-search theme-btn">
@@ -9,7 +9,7 @@
         <div class="popup-inner">
             <div class="overlay-layer"></div>
             <div class="search-form">
-                <form method="post" action="http://azim.commonsupport.com/Finandox/{{url('/')}}">
+                <form method="post" action="http://azim.commonsupport.com/Finandox/{{ url('/') }}">
                     <div class="form-group">
                         <fieldset>
                             <input type="search" class="form-control" name="search-input" value=""
@@ -30,7 +30,7 @@
             </div>
         </div>
     </div>
-     <!-- Welcome Setion -->
+    <!-- Welcome Setion -->
     <section class="welcome-section pt-0">
         <div class="auto-container">
             <div class="wrapper-box">
@@ -41,26 +41,20 @@
                             <div class="icon-box">
                                 <span class="flaticon-analysis"></span>
                             </div>
-                            <h2>Trade Finance</h2>
+                            <h2>@lang('lang.tradeFinance')</h2>
                             <div class="text">
-                                Trade finance signifies financing for trade, and it concerns
-                                both domestic and international trade transactions
+                                @lang('lang.tradeFinanceContent')
                             </div>
                             <div class="read-more"><a href="#">Read More</a></div>
                         </div>
                     </div>
                     <!-- Welcome Block One -->
                     <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                        <div class="inner-box"
-                            style="
-                background-image: url(assets/images/resource/image-2.jpg);
-              ">
+                        <div class="inner-box" style="background-image: url(assets/images/resource/image-2.jpg);">
                             <div class="icon-box"><span class="flaticon-tax"></span></div>
-                            <h2>Mortgage Finance</h2>
+                            <h2>@lang('lang.mortageFinance')</h2>
                             <div class="text">
-                                With over 10 years’ experience, Prime Finance works with a
-                                bank and financial institutions to bring you the best option
-                                with the rate.
+                                @lang('lang.mortageFinanceContent')
                             </div>
                             <div class="read-more"><a href="#">Read More</a></div>
                         </div>
@@ -71,11 +65,9 @@
                             <div class="icon-box">
                                 <span class="flaticon-work-1"></span>
                             </div>
-                            <h2>Business Loan</h2>
+                            <h2>@lang('lang.businessLoan')</h2>
                             <div class="text">
-                                Prime Finance arranges the business Loan from the various
-                                banks and the financial institute to grow the business and
-                                for the working capital.
+                                @lang('lang.businessLoanContent')
                             </div>
                             <div class="read-more"><a href="#">Read More</a></div>
                         </div>
@@ -106,39 +98,35 @@
                 <div class="col-lg-6">
                     <div class="content-box">
                         <div class="sec-title">
-                            <div class="sub-title">About Us</div>
-                            <h2>Right Advice to your financial future</h2>
-                            <div class="text">
-                                Prime Finance Consultant assists you in all aspects of
-                                arranging Trade Facility & Finance from local &
-                                International financial institutions and banks. Our ultimate
-                                objective is the client's complete fulfilment.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="info-column col-md-6">
-                                <div class="icon-box">
-                                    <div class="icon">
-                                        <img src="assets/images/icons/icon-1.png" alt="" />
+                            <div class="sub-title">@lang('lang.aboutUsHeading')</div>
+                            <h2>@lang('lang.rightAdviceHeading')</h2>
+                                    <div class="text">
+                                        @lang('lang.rightAdviceContent')</div>
                                     </div>
-                                    <h5>Phone Number</h5>
-                                    <h2>+971 589 776 626</h2>
-                                </div>
-                            </div>
-                            <div class="info-column col-md-6">
-                                <div class="icon-box">
-                                    <div class="icon">
-                                        <img src="assets/images/icons/icon-2.png" alt="" />
+                                    <div class="row">
+                                        <div class="info-column col-md-6">
+                                            <div class="icon-box">
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/icon-1.png" alt="" />
+                                                </div>
+                                                <h5>Phone Number</h5>
+                                                <h2>+971 589 776 626</h2>
+                                            </div>
+                                        </div>
+                                        <div class="info-column col-md-6">
+                                            <div class="icon-box">
+                                                <div class="icon">
+                                                    <img src="assets/images/icons/icon-2.png" alt="" />
+                                                </div>
+                                                <h5>Email Address</h5>
+                                                <h2>info@theprimefinance.com</h2>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h5>Email Address</h5>
-                                    <h2>info@theprimefinance.com</h2>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Services Section -->
@@ -148,40 +136,35 @@
                 <div class="left-column">
                     <div class="services-content">
                         <div class="sec-title light">
-                            <div class="sub-title">Our Services</div>
-                            <h2>What Actually We <br />Do Here.</h2>
+                            <div class="sub-title">@lang('lang.ourServiceHeading')</div>
+                            <h2>@lang('lang.whatActuallty')<br />@lang('lang.doHere')
+                            </h2>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="icon">
                                 <img src="assets/images/icons/icon-3.png" alt="" />
                             </div>
-                            <h2>TRADE FINANCE</h2>
+                            <h2 style="text-transform: uppercase">@lang('lang.tradeFinance')</h2>
                             <div class="text">
-                                Trade finance signifies financing for trade, and it concerns
-                                both domestic and international trade transactions
+                                @lang('lang.tradeFinanceContent')
                             </div>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="icon">
                                 <img src="assets/images/icons/icon-4.png" alt="" />
                             </div>
-                            <h2>MORTGAGE FINANCE</h2>
-                            <div class="text">
-                                We at Prime Finance compare the Mortgage parameters which
-                                include Rate, application fees, Insurance etc. with the
-                                entire bank and the finance institute so we can serve the
-                                best product to our client.
-                            </div>
+                            <h2>@lang('lang.mortageFinance')</h2>
+                                    <div class="text">
+                                        @lang('lang.mortageFinanceContent2')
+                                    </div>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                             <div class="icon">
                                 <img src="assets/images/icons/icon-5.png" alt="" />
                             </div>
-                            <h2>BUSINESS LOAN</h2>
+                            <h2>@lang('lang.businessLoan')</h2>
                             <div class="text">
-                                Prime Finance arranges the business Loan from the various
-                                banks and the financial institute to grow the business and
-                                for the working capital.
+                                @lang('lang.businessLoanContent')
                             </div>
                         </div>
                     </div>
@@ -312,18 +295,18 @@
                 <div class="col-lg-6">
                     <div class="content-box">
                         <div class="sec-title">
-                            <div class="sub-title">Why Choose Us</div>
-                            <h2>Why Should You <br />Choose Us ?</h2>
+                            <div class="sub-title"> @lang('lang.WhyChooseUs')</div>
+                            <h2> @lang('lang.WhyShouldYou') <br /> @lang('lang.ChooseUs')</h2>
                         </div>
                         <ul class="nav nav-tabs tab-btn-style-one" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="tab-one-area" data-toggle="tab" href="#tab-one"
-                                    role="tab" aria-controls="tab-one" aria-selected="true">Our Mission
+                                    role="tab" aria-controls="tab-one" aria-selected="true">@lang('lang.OurMission')
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="tab-two-area" data-toggle="tab" href="#tab-two" role="tab"
-                                    aria-controls="tab-two" aria-selected="false">Our Vission</a>
+                                    aria-controls="tab-two" aria-selected="false">@lang('lang.OurVission')</a>
                             </li>
                         </ul>
 
@@ -339,20 +322,10 @@
                                     </div>
                                     <div class="text">
                                         <p>
-                                            We try our best to know and understand your financial
-                                            situation and provide you with the highest quality
-                                            guidance service, information, and products to help
-                                            you achieve your objective. We associate with clients
-                                            in long-term, trusted financial advisory relationships
+                                            @lang('lang.OurMissionC1')
                                         </p>
                                         <p>
-                                            Our mission is to help Corporate, Midium & micro size
-                                            business grip the tasks of living their aim and
-                                            thoughts by design, applying, and observing financial
-                                            plan consistent with their center values.To make an
-                                            optimistic variation in the lives of our clients,
-                                            mostly through a practiced, one-on-one relationship
-                                            with our financial team.
+                                            @lang('lang.OurMissionC2')
                                         </p>
                                     </div>
                                 </div>
@@ -367,17 +340,11 @@
                                     </div>
                                     <div class="text">
                                         <p>
-                                            The Prime Finance (TPF)offer modern financial products
-                                            accessible to all and sundry. Our vision as a firm
-                                            focuses on serving additional financial object, as
-                                            well as understanding of each client’s unique
-                                            intention, assignment and principles.
+                                            @lang('lang.OurVissionC1')
                                         </p>
                                         <p>
-                                            TPF wants to help more clients have access to
-                                            financial services in a trouble-free, visible, secure
-                                            and responsive environment. Every client has special
-                                            thoughts about what makes life great.
+                                            @lang('lang.OurVissionC2')
+
                                         </p>
                                     </div>
                                 </div>

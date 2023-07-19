@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+
 
 class MailController extends Controller
 {
@@ -25,5 +27,12 @@ class MailController extends Controller
         });
         
         return redirect()->back()->with(['msg-success'=>'Thanks for contacting we will get back to you soon.']);
+    }
+    function handleLang(Request $req) {
+        if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
+        return redirect()->back();
     }
 }

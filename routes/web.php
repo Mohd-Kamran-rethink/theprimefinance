@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\MailController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,32 +16,71 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (Request $req) {
+    if($req->query('lng'))
+    {
+        session()->put('lng',$req->query('lng'));
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.Home');
-});
-Route::get('/about', function () {
+})->middleware('langMiddle');
+   
+
+Route::get('/about', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.About');
-});
-Route::get('/trade-finance', function () {
+})->middleware('langMiddle');
+Route::get('/trade-finance', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.trade-finance');
-});
-Route::get('/mortgage-finance', function () {
+})->middleware('langMiddle');
+Route::get('/mortgage-finance', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.mortgage-finance');
-});
-Route::get('/business-loan', function () {
+})->middleware('langMiddle');
+Route::get('/business-loan', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.business-loan');
-});
-Route::get('/Equipment-Machiner', function () {
+})->middleware('langMiddle');
+Route::get('/Equipment-Machiner', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.Equipment-Machiner');
-});
-Route::get('/Trade-Credit-Insurance', function () {
+})->middleware('langMiddle');
+Route::get('/Trade-Credit-Insurance/{lang?}', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.Trade-Credit-Insurance');
-});
-Route::get('/contact', function () {
+})->middleware('langMiddle');
+Route::get('/contact/{lang?}', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.contact');
-});
-Route::get('/Equipment-Machinery', function () {
+})->middleware('langMiddle');
+Route::get('/Equipment-Machinery/{lang?}', function (Request $req) {
+    if($req->query('lng'))
+    {
+        App::setlocale($req->query('lng'));
+    }
     return view('Pages.Equipment-Machinery');
-});
+})->middleware('langMiddle');
 
 Route::post('/contact', [MailController::class, 'sendMail'])->name('sendMail');

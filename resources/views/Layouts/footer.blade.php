@@ -18,10 +18,7 @@
                   /></a>
                 </div>
                 <div class="text">
-                  The Prime Finance Consultant assists you in all aspects of
-                  arranging Trade Facility & Finance from local &
-                  International financial institutions and banks. Our
-                  ultimate objective is the client's complete fulfilment.
+                  @lang('lang.footerContent')
                 </div>
                 <ul class="social-links clearfix">
                   <li>

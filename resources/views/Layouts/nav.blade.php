@@ -1,4 +1,31 @@
   <!-- Main Header -->
+  <style>
+      .parent-li {
+          position: relative;
+      }
+
+      .nested-ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: rgba(184, 91, 29, 0.429);
+          border-left: none
+      }
+
+      .parent-li:hover .nested-ul {
+          display: block;
+      }
+
+      .parent-li:hover .nested-ul li {
+          text-align: center
+      }
+
+      .parent-li:hover .nested-ul li:hover {
+          background: rgba(184, 91, 29);
+      }
+  </style>
   <header class="main-header">
       <!-- Header Top -->
       <div class="header-top">
@@ -22,12 +49,15 @@
                       <div class="contact-info">
                           <div class="single-info d-flex flex-column align-items-center">
                               <div class="d-flex align-items-center">
-                                  <a href="tel:+971589776626" style="color:white" class="text"><i class="flaticon-call-1 pr-3"
-                                          style="font-size: 18px;font-weight: bold"></i> +971 589 776 626</a>
+                                  <a href="tel:+971589776626" style="color:white" class="text"><i
+                                          class="flaticon-call-1 pr-3" style="font-size: 18px;font-weight: bold"></i>
+                                      +971 589 776 626</a>
                               </div>
                               <div class="d-flex align-items-center">
-                                  <a href="tel:+971589776626" style="color: white" class="text"><i  class="flaticon-whatsapp  pr-3"
-                                          style="font-size: 18px;font-weight: bold;color:#25D366"></i> +971 589 776 626</a>
+                                  <a href="tel:+971589776626" style="color: white" class="text"><i
+                                          class="flaticon-whatsapp  pr-3"
+                                          style="font-size: 18px;font-weight: bold;color:#25D366"></i> +971 589 776
+                                      626</a>
                               </div>
 
                           </div>
@@ -99,12 +129,20 @@
                       <ul class="social-links clearfix">
                           <li>
                               <a
-                                  href="https://www.linkedin.com/in/the-prime-trade-finance-banking-consulting-06341a192"><span
-                                      class="fab fa-linkedin-in"></span></a>
+                                  href="https://www.linkedin.com/in/the-prime-trade-finance-banking-consulting-06341a192">
+                                  <span class="fab fa-linkedin-in"></span>
+                              </a>
                           </li>
-                          <!-- <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li> -->
+                          <li class="parent-li">
+                              <a href="#">
+                                  Lang
+                                  <ul class="nested-ul">
+                                      <li onclick="handleLanguage('en')" style="margin: 0;padding:0">English</li>
+                                      <li onclick="handleLanguage('rus')" style="margin: 0;padding:0">Russian</li>
+                                      <li onclick="handleLanguage('chinese')" style="margin: 0;padding:0">Chinese</li>
+                                  </ul>
+                              </a>
+                          </li>
                       </ul>
                   </div>
               </div>
@@ -162,5 +200,14 @@
           </nav>
       </div>
       <!-- End Mobile Menu -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+          function handleLanguage(language) {
+              let currentURL = window.location.origin + window.location.pathname;
+              let url = currentURL + "?lng=" + language;
+              window.location.href = url;
+          }
+      </script>
   </header>
   <!-- End Main Header -->
