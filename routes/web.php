@@ -17,67 +17,66 @@ use Illuminate\Support\Facades\App;
 */
 
 Route::get('/', function (Request $req) {
-    if($req->query('lng'))
-    {
-        session()->put('lng',$req->query('lng'));
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.Home');
 })->middleware('langMiddle');
-   
+
 
 Route::get('/about', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.About');
 })->middleware('langMiddle');
 Route::get('/trade-finance', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.trade-finance');
 })->middleware('langMiddle');
 Route::get('/mortgage-finance', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.mortgage-finance');
 })->middleware('langMiddle');
 Route::get('/business-loan', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.business-loan');
 })->middleware('langMiddle');
 Route::get('/Equipment-Machiner', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.Equipment-Machiner');
 })->middleware('langMiddle');
 Route::get('/Trade-Credit-Insurance/{lang?}', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.Trade-Credit-Insurance');
 })->middleware('langMiddle');
 Route::get('/contact/{lang?}', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.contact');
 })->middleware('langMiddle');
 Route::get('/Equipment-Machinery/{lang?}', function (Request $req) {
-    if($req->query('lng'))
-    {
+    if ($req->query('lng')) {
+        session()->put('lng', $req->query('lng'));
         App::setlocale($req->query('lng'));
     }
     return view('Pages.Equipment-Machinery');

@@ -45,7 +45,7 @@
                             <div class="text">
                                 @lang('lang.tradeFinanceContent')
                             </div>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="#">@lang('lang.readMore')</a></div>
                         </div>
                     </div>
                     <!-- Welcome Block One -->
@@ -56,7 +56,7 @@
                             <div class="text">
                                 @lang('lang.mortageFinanceContent')
                             </div>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="#">@lang('lang.readMore')</a></div>
                         </div>
                     </div>
                     <!-- Welcome Block One -->
@@ -69,7 +69,7 @@
                             <div class="text">
                                 @lang('lang.businessLoanContent')
                             </div>
-                            <div class="read-more"><a href="#">Read More</a></div>
+                            <div class="read-more"><a href="#">@lang('lang.readMore')</a></div>
                         </div>
                     </div>
                 </div>
@@ -374,8 +374,8 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="sec-title">
-                        <div class="sub-title">Write Here</div>
-                        <h2>Get In Touch</h2>
+                        <div class="sub-title">@lang('lang.WriteHere')</div>
+                        <h2>@lang('lang.GetInTouch')</h2>
                     </div>
                     <!-- Contact Form-->
                     <div class="contact-form">
@@ -383,28 +383,28 @@
                             id="contact-form">
                             <div class="row clearfix">
                                 <div class="col-md-12 form-group">
-                                    <label for="name">Enter your name</label>
+                                    <label for="name">@lang('lang.Enteryourname')</label>
                                     <input type="text" name="username" id="name"
                                         placeholder="Enter name here......" required="" />
                                     <i class="fas fa-user"></i>
                                 </div>
 
                                 <div class="col-md-12 form-group">
-                                    <label for="email">Enter your email</label>
+                                    <label for="email">@lang('lang.Enteryouremail')</label>
                                     <input type="email" name="email" id="email"
                                         placeholder="Enter email here......" required="" />
                                     <i class="fas fa-envelope"></i>
                                 </div>
 
                                 <div class="col-md-12 form-group">
-                                    <label for="message">Enter your message</label>
+                                    <label for="message">@lang('lang.Enteryourmessage')</label>
                                     <textarea name="message" id="message" placeholder="Enter message here......"></textarea>
                                     <i class="fas fa-edit"></i>
                                 </div>
 
                                 <div class="col-md-12 form-group">
                                     <button class="theme-btn btn-style-one" type="submit" name="submit-form">
-                                        <span class="btn-title">Get In Touch</span>
+                                        <span class="btn-title">@lang('lang.GetInTouch')</span>
                                     </button>
                                 </div>
                             </div>
@@ -413,8 +413,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="sec-title">
-                        <div class="sub-title">Get Us Here</div>
-                        <h2>Contact Us</h2>
+                        <div class="sub-title">@lang('lang.GetUsHere')</div>
+                        <h2>@lang('lang.ContactUs')</h2>
                     </div>
                     <div class="contact-info">
                         <div class="border-box">

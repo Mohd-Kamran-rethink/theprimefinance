@@ -53,68 +53,115 @@
                     <aside class="sidebar">
                         <!-- Category Widget -->
                         <div class="sidebar-widget-two categories-widget-two">
-                            <div class="widget-content">
-                                <ul>
-                                    <li><a href="{{url('trade-finance')}}">Trade Finance<i class="fa fa-angle-right"></i></a></li>
-                                    <li><a href="{{url('mortgage-finance')}}')}}">Mortgage Finance<i
-                                                class="fa fa-angle-right"></i></a></li>
-                                    <li><a href="{{url('business-loan')}}">Business Loan<i class="fa fa-angle-right"></i></a></li>
-                                    <li class="current"><a href="{{url('Equipment-Machinery')}}">Equipment &amp; Machinery<i
-                                                class="fa fa-angle-right"></i></a></li>
-                                    <li><a href="{{url('Trade-Credit-Insurance')}}">Trade Credit Insurance</a></li>
-
-
-                                </ul>
-                            </div>
+                          <div class="widget-content">
+                            <ul>
+                              <li >
+                                <a href="{{url('trade-finance')}}"
+                                  >@lang('lang.tradeFinance')<i class="fa fa-angle-right"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="{{url('mortgage-finance')}}"
+                                  >@lang('lang.mortageFinance')<i class="fa fa-angle-right"></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="{{url('business-loan')}}"
+                                  >@lang('lang.businessLoan')<i class="fa fa-angle-right"></i
+                                ></a>
+                              </li>
+                              <li class="current">
+                                <a href="{{url('Equipment-Machinery')}}"
+                                  >@lang('lang.EquipmentMachinery')<i
+                                    class="fa fa-angle-right"
+                                  ></i
+                                ></a>
+                              </li>
+                              <li>
+                                <a href="{{url('Trade-Credit-Insurance')}}"
+                                  >@lang('lang.TradeCreditInsurance')</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                         <!-- Contact Form Widget -->
                         <div class="sidebar-widget-two contact-form-widget">
-                            <div class="inner-box">
-                                <h3>Contact Us</h3>
-                                <!-- Contact Form-->
-                                <div class="contact-form">
-                                    <form method="post" action="#" id="contact-form">
-                                        <div class="row clearfix">
-                                            <div class="col-md-12 form-group">
-                                                <input type="text" name="username" placeholder="Enter name here......"
-                                                    required="">
-                                                <i class="fal fa-user"></i>
-                                            </div>
-
-                                            <div class="col-md-12 form-group">
-                                                <input type="email" name="email" placeholder="Enter email here......"
-                                                    required="">
-                                                <i class="fal fa-envelope"></i>
-                                            </div>
-
-                                            <div class="col-md-12 form-group">
-                                                <input type="email" name="email" placeholder="Enter Phone Number......"
-                                                    required="">
-                                                <i class="fal fa-phone"></i>
-                                            </div>
-
-                                            <div class="col-md-12 form-group text-center">
-                                                <button class="theme-btn btn-style-one" type="submit"
-                                                    name="submit-form"><span class="btn-title">Submit Now</span></button>
-                                            </div>
-                                        </div>
-                                    </form>
+                          <div class="inner-box">
+                            <h3>@lang('lang.ContactUs')</h3>
+                            <!-- Contact Form-->
+                            <div class="contact-form">
+                              <form method="post" action="#" id="contact-form">
+                                <div class="row clearfix">
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="text"
+                                      name="username"
+                                      placeholder="@lang('lang.Enteryourname')..."
+                                      required=""
+                                    />
+                                    <i class="fal fa-user"></i>
+                                  </div>
+        
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="email"
+                                      name="email"
+                                      placeholder="@lang('lang.Enteryouremail')..."
+                                      required=""
+                                    />
+                                    <i class="fal fa-envelope"></i>
+                                  </div>
+        
+                                  <div class="col-md-12 form-group">
+                                    <input
+                                      type="email"
+                                      name="email"
+                                      placeholder="@lang('lang.EnteryourPhone')..."
+                                      required=""
+                                    />
+                                    <i class="fal fa-phone"></i>
+                                  </div>
+        
+                                  <div class="col-md-12 form-group text-center">
+                                    <button
+                                      class="theme-btn btn-style-one"
+                                      type="submit"
+                                      name="submit-form"
+                                    >
+                                      <span class="btn-title">@lang('lang.SubmitNow')</span>
+                                    </button>
+                                  </div>
                                 </div>
+                              </form>
                             </div>
+                          </div>
                         </div>
                         <!-- Contact Info Widget -->
                         <div class="sidebar-widget-two contact-info-widget">
-                            <div class="inner-box" style="background-image: url(assets/images/background/image-18.jpg);">
-                                <h3>Need Help?</h3>
-                                <ul>
-                                    <li><a href="mailto:info@webmail.com">info@theprimefinance.com</a></li>
-                                    <li><a href="tel:+98787676576">+971 589 776 626</a></li>
-                                    <li><a href="mailto:support.example.com">www.theprimefinance.com</a></li>
-                                </ul>
-                            </div>
+                          <div
+                            class="inner-box"
+                            style="
+                              background-image: url(assets/images/background/image-18.jpg);
+                            "
+                          >
+                            <h3>@lang('lang.Needhelp')?</h3>
+                            <ul>
+                              <li>
+                                <a href="mailto:info@webmail.com"
+                                  >info@theprimefinance.com</a
+                                >
+                              </li>
+                              <li><a href="tel:+98787676576">+971 589 776 626</a></li>
+                              <li>
+                                <a href="mailto:support.example.com"
+                                  >www.theprimefinance.com</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-
-                    </aside>
+                      </aside>
                 </div>
                 <div class="col-lg-8">
                     <div class="services-details pl-lg-5">
